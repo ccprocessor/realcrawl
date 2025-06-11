@@ -1,0 +1,21 @@
+{
+    // Base基础异常 (10000000)
+    "realcrawlBase": {
+      "realcrawlBaseException": {
+        "code": 10000000,
+        "message": "realcrawl base exception"
+      }
+    },
+
+    // 配置相关异常 (20000000)
+    "Config": {
+      "ConfigBaseException": {
+        "code": 20000000,
+        "message": "Config base exception"
+      },
+      "ConfigFileNotFoundException": {
+        "code": 21000000,
+        "message": "Config file not found exception"
+      }
+    }
+  }
