@@ -1,1 +1,5 @@
 commentjson==0.9.0
+commentjson
+func-timeout
+git+https://github.com/ccprocessor/llm-webkit-mirror.git@dev
+loguru

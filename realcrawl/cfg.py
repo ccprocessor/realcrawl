@@ -10,6 +10,7 @@ import commentjson as json
 from loguru import logger
 
 from realcrawl.exception.base import ConfigFileNotFoundException
+from realcrawl.libs.path_lib import get_py_pkg_root_dir
 
 
 def load_config(suppress_error: bool = False) -> dict:
@@ -60,3 +61,17 @@ def load_config(suppress_error: bool = False) -> dict:
         config = json.load(f)
 
     return config
+
+
+def load_pipe_tpl(pipe_name: str) -> dict:
+    """Load the pipe template for the web kit.
+
+    Args:
+        pipe_name(str): The name of the pipe to load
+
+    Returns: pipe_tpl(dict): The pipe template dictionary
+    """
+    pipe_tpl_path = os.path.join(get_py_pkg_root_dir(), 'config', 'extract_tpl', f'{pipe_name}.jsonc')
+    with open(pipe_tpl_path, 'r', encoding='utf-8') as f:
+        pipe_tpl = json.load(f)
+    return pipe_tpl
