@@ -1,7 +1,7 @@
 {
-    "extractor_pipe": { 
+    "extractor_pipe": {
             "enable": true,
-            "validate_input_format": false, 
+            "validate_input_format": false,
             "pre_extractor": [
                 {
                     "enable": true,
