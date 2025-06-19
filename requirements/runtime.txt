@@ -1,5 +1,9 @@
+aiofiles==24.1.0
 commentjson==0.9.0
 commentjson
 func-timeout
 git+https://github.com/ccprocessor/llm-webkit-mirror.git@dev
+httpx[socks]==0.28.1
 loguru
+playwright==1.52.0
+tldextract==5.3.0
